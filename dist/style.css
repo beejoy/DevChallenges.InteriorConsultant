@@ -44,7 +44,7 @@ body.noscroll {
 .header .overlay {
   opacity: 1;
   position: fixed;
-  top: 52px;
+  top: 0px;
   right: 0px;
   left: 0px;
   height: 100%;
@@ -94,6 +94,7 @@ body.noscroll {
   transition: all 300ms ease-in-out;
   -webkit-transform-origin: 3px 1px;
           transform-origin: 3px 1px;
+  z-index: 102;
 }
 
 .header .hamburger__toggle > span:not(:last-child) {
