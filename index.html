@@ -2,10 +2,71 @@
 <html>
     <head>
         <title>Interior Consultant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="./dist/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <header class="header">
+            <div class="overlay has-fade"></div>
+
+            <nav class="container">
+                <div href="#" class="header__logo">This Interior</div>
+
+                <a id="btnHamburger" href="#" class="hamburger__toggle hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div class="header__links hide-for-mobile">
+                    <a href="#" class="current">Home</a><a href="#">Collection</a><a href="#">About</a><a href="#">Contact</a>
+                  </div>
+            </nav>
+
+            <div class="hamburger__menu has-fade">
+                <a href="">Home</a>
+                <a href="">Collection</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+        </header>
         
+        <section class="hero">
+            <div class="hero__text">
+                <h1>Modern Interior</h1>
+                <p>A full-service residential &amp; commercial interior design and staging company offering professional organizing &amp; eco&#8209;services.</p>
+                <p><strong>Read more</strong> <img class="arrow-icon" src="/images/icons8-right-arrow-50.png" /></p>
+            </div>
+
+            <div class="hero__image">
+                <div class="hero__designer">
+                    <div class="hero__designer__profile">
+                        <section class="hero__designer__photo">
+                            <img src="/images/photo2.png" />
+                        </section>
+                        <section class="hero__designer__name">
+                            <h2>Aliza Webber</h2>
+                            <p>Interior designer</p>
+                        </section>
+                    </div>
+
+                    <div>
+                        <p>Designed in 2020 by<br />Aliza Webber</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <footer>
+            <p>Bijay Rai @ DevChallenges.io</p>
+            <div><a target="_blank" href="https://icons8.com/icons/set/long-arrow-right">Right Arrow icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+        </footer>
+
+        <script src="/app/js/script.js"></script>
     </body>
 </html>
