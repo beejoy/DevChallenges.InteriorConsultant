@@ -17,6 +17,9 @@ body {
     background-color: $backgroundBlack;
     color: $white;
 
+    display: flex;
+    flex-direction: column;
+
     font-family: Montserrat, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -233,15 +236,20 @@ body {
     &__image {
         position: relative;
 
-        height: 25rem;
+        //height: 25rem;
 
-        background-image: url('/images/photo1.png');
+        /*background-image: url('/images/photo1.png');
         background-size: 100%;
-        background-repeat: no-repeat;
-        
+        background-repeat: no-repeat;*/
+
+        & > img {
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+        }
 
         @media (min-width: 1024px) {
-            height: 40rem;
+            //height: 40rem;
             width: 100%;
             //background-position: bottom;
         }
@@ -253,7 +261,8 @@ body {
         justify-content: flex-start;
 
         position: absolute;
-        top: 215px;
+        //top: 215px;
+        bottom: -100px;
         right: 1rem;
         width: 84%;
 
@@ -263,7 +272,7 @@ body {
         padding: 1rem;
 
         @media (min-width: 1024px) {
-            top: 70%;
+            bottom: -80px;
             max-width: 400px;
         }
         &__profile {
@@ -330,9 +339,14 @@ footer {
     justify-content: center;
     align-items: center;
 
+    margin-top: 10rem;
     margin-bottom: 1.5rem;
     
     width: 100%;
+
+    @media (min-width: 1024px) {
+        margin-top: 10rem;
+    }
 
     & > p {
         border-top: 2px solid $gray;
